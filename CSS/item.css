@@ -1,0 +1,160 @@
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.section-title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0 2rem;
+  background-color: white;
+  color: #7a58b9;
+}
+.section-title .line {
+  border-top: 1px solid #7a58b9;
+  border-bottom: none;
+  margin-top: 6rem;
+}
+.catalog .catalog-item-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog .catalog-item-block .item-img {
+  width: 50%;
+  text-align: center;
+  border: 1px solid #7a58b9;
+  padding: 1rem 0;
+  height: 400px;
+}
+.catalog .catalog-item-block .item-img img {
+  height: 100%;
+}
+.catalog .catalog-item-block .item-description {
+  height: 400px;
+  width: 45%;
+}
+.catalog .catalog-item-block .item-description .description {
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+  height: 200px;
+}
+.catalog .catalog-item-block .item-description .description p {
+  font-size: 2rem;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts {
+  height: 200px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts .imgbox {
+  text-align: center;
+  width: 100%;
+  max-height: 150px;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts .imgbox img {
+  height: 100%;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts button {
+  width: 40%;
+  text-align: center;
+  border: 1px solid #7a58b9;
+  border-radius: 2rem;
+  padding: 1rem .5rem;
+  text-transform: uppercase;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts button.to-cart {
+  color: white;
+  background-color: #7a58b9;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts button.to-cart:hover {
+  color: #ffffff;
+  background-color: #a67af8;
+  border: 1px solid #a67af8;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts .quick-to-cart {
+  color: #7a58b9;
+  background-color: #ffffff;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #7a58b9;
+  border-radius: 2rem;
+  padding: 1rem .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.catalog .catalog-item-block .item-description .to-cart-buts .quick-to-cart:hover {
+  color: #000000;
+  background-color: #a67af8;
+  border: 1px solid #a67af8;
+}
+@media (max-width: 575px) {
+  .catalog .catalog-item-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .catalog .catalog-item-block .item-img {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #7a58b9;
+    padding: 1rem 0;
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+  .catalog .catalog-item-block .item-img img {
+    height: 100%;
+  }
+  .catalog .catalog-item-block .item-description {
+    height: auto;
+    width: 100%;
+  }
+  .catalog .catalog-item-block .item-description .description {
+    border-bottom: 1px solid #000;
+    margin-bottom: 2rem;
+    height: 200px;
+  }
+  .catalog .catalog-item-block .item-description .description p {
+    font-size: 2rem;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts {
+    height: auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts .imgbox {
+    display: none;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts button {
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    border: 1px solid #7a58b9;
+    border-radius: 2rem;
+    padding: 1rem .5rem;
+    text-transform: uppercase;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts button.to-cart {
+    color: white;
+    background-color: #7a58b9;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts button.to-cart:hover {
+    color: #ffffff;
+    background-color: #a67af8;
+    border: 1px solid #a67af8;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts button.quick-to-cart {
+    color: #7a58b9;
+    background-color: #ffffff;
+  }
+  .catalog .catalog-item-block .item-description .to-cart-buts button.quick-to-cart:hover {
+    color: #000000;
+    background-color: #a67af8;
+    border: 1px solid #a67af8;
+  }
+}

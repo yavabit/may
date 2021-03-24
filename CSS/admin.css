@@ -1,0 +1,315 @@
+body {
+  background-color: #474644;
+}
+.container {
+  padding-left: 200px;
+  padding-right: 65px;
+}
+.admin .admin-main-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+.admin .admin-main-menu .admin-list {
+  padding-left: 2rem;
+}
+.admin .admin-main-menu .admin-list li {
+  margin-top: 2rem;
+  border: 1px solid #3a0bbd;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .admin-main-menu .admin-list li a {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: #ffffff;
+}
+.admin .admin-main-menu .admin-list li:hover {
+  background-color: #3a0bbd;
+}
+.admin .admin-main-menu .admin-list li:hover a {
+  color: white;
+}
+.admin .change-list {
+  padding-left: 0;
+}
+.admin .change-list li {
+  display: inline-block;
+  border: 1px solid #3a0bbd;
+  border-radius: 10px;
+  margin-left: 2rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .change-list li:first-child {
+  margin-left: 0;
+}
+.admin .change-list li.current {
+  background-color: #3a0bbd;
+}
+.admin .change-list li a {
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  color: #ffffff;
+}
+.admin .change-list li:hover {
+  background-color: #3a0bbd;
+}
+.admin .submenu {
+  padding-left: 5rem;
+  margin-bottom: 5rem;
+}
+.admin .submenu h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.admin .submenu label {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
+}
+.admin .submenu label:first-child {
+  margin-top: 0;
+}
+.admin .submenu select {
+  font-size: 2rem;
+  background-color: #474644;
+  border: none;
+  border: 1px solid #b3baf5;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  cursor: pointer;
+  margin-left: 0;
+}
+.admin .submenu input {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  background-color: #474644;
+  border: none;
+  border-bottom: 1px solid #b3baf5;
+  padding: .5rem .5rem;
+}
+.admin .submenu input:focus {
+  border: none;
+  border-bottom: 1px solid #b8b3f5;
+  outline: none;
+}
+.admin .submenu input[type="radio"] {
+  display: inline-block;
+  cursor: pointer;
+}
+.admin .submenu fieldset {
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+.admin .submenu fieldset p {
+  font-size: 1.5rem;
+  color: white;
+}
+.admin .submenu fieldset#new label,
+.admin .submenu fieldset#type label,
+.admin .submenu fieldset#popular label {
+  display: inline-block;
+  border-right: 1px solid black;
+  margin-right: 3rem;
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+}
+.admin .submenu button {
+  margin-top: 3rem;
+  background-color: transparent;
+  border: 1px solid #b3baf5;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .submenu button:hover {
+  background-color: #b3baf5;
+}
+.admin .submenu button.add_color {
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  color: #b3baf5;
+}
+.admin .submenu button.add_color:hover {
+  color: #000000;
+}
+.admin .submenu .changing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.admin .submenu .changing form {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+.admin .submenu .changing form label {
+  width: 100%;
+}
+.admin .submenu .changing form label input {
+  display: inline-block;
+  width: 20%;
+}
+.admin .submenu .changing form button {
+  display: inline-block;
+}
+.admin .submenu .changing .catalog-item {
+  width: 21%;
+  height: 350px;
+  border: 1px solid white;
+  margin-bottom: 3rem;
+}
+.admin .submenu .changing .catalog-item .catalog-item-img {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+.admin .submenu .changing .catalog-item .catalog-item-img img {
+  height: 100%;
+}
+.admin .submenu .changing .catalog-item .description {
+  height: 40%;
+  padding: 0 .5rem;
+  color: white;
+}
+.admin .submenu .changing .catalog-item .description .title {
+  height: 30%;
+}
+.admin .submenu .changing .catalog-item .description .price {
+  font-size: 2rem;
+}
+.admin .submenu .changing .catalog-item .description .to-cart-buts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+  padding: 0 .5rem;
+}
+.admin .submenu .changing .catalog-item .description .to-cart-buts a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 0;
+  background-color: transparent;
+  border: 1px solid #b3baf5;
+  border-radius: 1rem;
+  padding: .3rem .3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .submenu .changing .catalog-item .description .to-cart-buts a:hover {
+  background-color: #b3baf5;
+}
+.admin .submenu .changing .catalog-item .description .to-cart-buts button {
+  margin-left: 1rem;
+  text-align: center;
+  margin-top: 0;
+  background-color: transparent;
+  border: 1px solid #b3baf5;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: .3rem .3rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.admin .submenu .changing .catalog-item .description .to-cart-buts button:hover {
+  background-color: brown;
+}
+.admin .submenu .item_change input[type="text"] {
+  width: 40%;
+}
+.admin .submenu .item_change label {
+  color: #b3baf5;
+}
+.admin .submenu .item_change input[type="radio"] {
+  cursor: pointer;
+}
+.admin .submenu .item_change .img-box {
+  height: 300px;
+}
+.admin .submenu .item_change .img-box img {
+  height: 100%;
+}
+.admin .submenu .orders table {
+  color: #000000;
+}
+.admin .submenu .orders table tr {
+  border: 1px solid black;
+}
+.admin .submenu .orders table tr td.class1 {
+  width: 5%;
+}
+.admin .submenu .orders table tr td.class2 {
+  width: 5%;
+}
+.admin .submenu .orders table tr td.class3 {
+  width: 10%;
+}
+.admin .submenu .orders table tr td.class4 {
+  width: 5%;
+}
+.admin .submenu .orders table tr td.class5 {
+  width: 10%;
+}
+.admin .submenu .orders table tr td.class6 {
+  width: 20%;
+}
+.admin .submenu .orders table tr td.class7 {
+  width: 10%;
+}
+.admin .submenu .orders table tr td.class8 {
+  width: 10%;
+}
+.admin .submenu .orders table tr td.class9 {
+  width: 10%;
+}
+.admin .submenu .orders table tr td.class10 {
+  width: 10%;
+}
+.admin .submenu .orders table tr.padding {
+  height: 20px;
+}
+.admin .logout {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: .5rem 2rem;
+  font-size: 2rem;
+  border: 1px solid #ff0000;
+  color: white;
+  background-color: #bd0b0b;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+.admin .logout:hover {
+  background-color: #ff0000;
+}

@@ -1,0 +1,191 @@
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.section-title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0 2rem;
+  background-color: white;
+  color: #7a58b9;
+}
+.section-title .line {
+  border-top: 1px solid #7a58b9;
+  border-bottom: none;
+  margin-top: 6rem;
+}
+.contacts .contacts-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts .contacts-items .info {
+  width: 40%;
+}
+.contacts .contacts-items .info ul {
+  list-style: none;
+  padding-left: 0;
+}
+.contacts .contacts-items .info ul li {
+  margin-left: 0;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.contacts .contacts-items .info ul li a {
+  text-decoration: none;
+  width: 100%;
+  font-size: 1.7rem;
+  color: #7a58b9;
+  position: relative;
+}
+.contacts .contacts-items .info ul li a:hover {
+  color: rgba(255, 0, 179, 0.788);
+}
+.contacts .contacts-items .info ul li a span {
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+}
+.contacts .contacts-items .info ul li a span.map {
+  background-image: url(../img/map.png);
+}
+.contacts .contacts-items .info ul li a span.tel {
+  background-image: url(../img/tel.png);
+}
+.contacts .contacts-items .info ul li a span.email {
+  background-image: url(../img/mail.png);
+}
+.contacts .contacts-items .info ul li a.telephone {
+  margin-right: 4rem;
+}
+.contacts .contacts-items .info ul li a .social {
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+}
+.contacts .contacts-items .info ul li span {
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+.contacts .contacts-items .info ul li span.location-all {
+  background-image: url(../img/location.png);
+}
+.contacts .contacts-items .info ul li span.location-on {
+  background-image: url(../img/location-on.png);
+}
+.contacts .contacts-items .map {
+  width: 60%;
+  height: 600px;
+}
+@media (max-width: 575px) {
+  .contacts .contacts-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts .contacts-items .info {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .contacts .contacts-items .info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .contacts .contacts-items .info ul li {
+    margin-left: 0;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .contacts .contacts-items .info ul li a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.7rem;
+    color: #7a58b9;
+    position: relative;
+  }
+  .contacts .contacts-items .info ul li a:hover {
+    color: rgba(255, 0, 179, 0.788);
+  }
+  .contacts .contacts-items .info ul li a span {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+  }
+  .contacts .contacts-items .info ul li a span.map {
+    background-image: url(../img/map.png);
+  }
+  .contacts .contacts-items .info ul li a span.tel {
+    background-image: url(../img/tel.png);
+  }
+  .contacts .contacts-items .info ul li a span.email {
+    background-image: url(../img/mail.png);
+  }
+  .contacts .contacts-items .info ul li a.telephone {
+    margin-right: 4rem;
+  }
+  .contacts .contacts-items .info ul li a .social {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+  }
+  .contacts .contacts-items .info ul li span {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+  .contacts .contacts-items .info ul li span.location-all {
+    background-image: url(../img/location.png);
+  }
+  .contacts .contacts-items .info ul li span.location-on {
+    background-image: url(../img/location-on.png);
+  }
+  .contacts .contacts-items .map {
+    width: 100%;
+    height: 300px;
+  }
+}

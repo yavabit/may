@@ -1,0 +1,328 @@
+body {
+    background-color: rgb(71, 70, 68);
+}
+.container {
+    padding-left: 200px;
+    padding-right: 65px;
+}
+.admin {
+    .admin-main-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin-left: 3rem;
+        margin-top: 3rem;
+        .admin-list {
+            padding-left: 2rem;
+            li {
+                margin-top: 2rem;
+                border: 1px solid rgb(58, 11, 189);
+                border-radius: 10px;
+                transition: background-color .3s;
+                a {
+                    display: inline-block;
+                    padding: 1rem 1rem;
+                    font-size: 2rem;
+                    width: 100%;
+                    text-decoration: none;
+                    transition: color .3s;
+                    color: #ffffff;
+                }
+                &:hover {
+                    a {
+                        color: white;
+                    }
+                    background-color:  rgb(58, 11, 189);
+                }
+            }
+        }
+    }
+
+    .change-list {
+        padding-left: 0;
+        li {
+            display: inline-block;
+            border: 1px solid rgb(58, 11, 189);
+            border-radius: 10px;
+            margin-left: 2rem;
+            transition: background-color .3s;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.current {
+                background-color:  rgb(58, 11, 189);
+            }
+            a {
+                display: inline-block;
+                padding: 1rem 1rem;
+                font-size: 2rem;
+                width: 100%;
+                text-decoration: none;
+                transition: color .3s;
+                color: #ffffff;                
+            }
+            &:hover {               
+                background-color:  rgb(58, 11, 189);
+            }
+        }
+    }
+
+    .submenu {
+        padding-left: 5rem;
+        margin-bottom: 5rem;
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        label {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: .5rem;
+            margin-top: 2.5rem;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        select {
+            font-size: 2rem;       
+            background-color: rgb(71, 70, 68);
+            border: none;        
+            border: 1px solid rgb(179, 186, 245);
+            border-radius: 5px;
+            padding: .5rem .5rem;
+            cursor: pointer;
+            margin-left: 0;
+        }
+        input {
+            display: block;
+            text-align: left;
+            font-size: 2rem;       
+            background-color: rgb(71, 70, 68);
+            border: none;        
+            border-bottom: 1px solid rgb(179, 186, 245);
+            padding: .5rem .5rem;
+            &:focus {
+                border: none;        
+                border-bottom: 1px solid rgb(184, 179, 245);
+                outline: none;
+            }
+            &[type="radio"] {
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+        }
+        fieldset {
+            padding-left: 3rem;
+            margin-top: 1rem;
+            p {
+                font-size: 1.5rem;
+                color:white;
+            }
+            &#new, &#type, &#popular {
+                label {
+                    display: inline-block;
+                    border-right: 1px solid black;
+                    margin-right: 3rem;
+                    padding-right: 3rem;
+                    padding-left: 0.5rem;
+                }
+                
+            }
+        }
+        button {
+            margin-top: 3rem;
+            background-color: transparent;
+            border: 1px solid rgb(179, 186, 245);
+            font-size: 2rem;
+            border-radius: 1rem;
+            padding: 1rem 4rem;
+            cursor: pointer;
+            transition: background-color .3s;
+            &:hover {
+                background-color: rgb(179, 186, 245);
+    
+            }
+            &.add_color {
+                font-size: 1.5rem;
+                padding: 1rem 1rem;
+                color: rgb(179, 186, 245);
+                &:hover {
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+
+        .changing {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            form {
+                margin-bottom: 3rem;
+                width: 100%;
+                label {
+                    width: 100%;
+                    input {
+                        display: inline-block;
+                        width: 20%;
+                    }
+                }
+                button {
+                    display: inline-block;
+                    
+                }
+            }
+            .catalog-item {
+                width: 21%;
+                height: 350px;
+                border: 1px solid white;
+                margin-bottom: 3rem;
+                .catalog-item-img {
+                    width: 100%;
+                    height: 60%;
+                    text-align: center;
+                    border-bottom: 1px solid #fff;
+                    img {
+                       
+                        height: 100%;
+                    }
+                }
+                
+                .description {
+                    height: 40%;
+                    padding: 0 .5rem;
+                    color: white;
+                    .title {
+                        height: 30%;
+                    }
+
+                    .price {
+                        font-size: 2rem;
+                    }
+
+                    .to-cart-buts {
+                        display: flex;
+                        justify-content: space-around;
+                        font-size: 1.5rem;
+                        padding: 0 .5rem;
+                        a {
+                            text-align: center;
+                            text-decoration: none;
+                            color: white;
+                            margin-top: 0;
+                            background-color: transparent;
+                            border: 1px solid rgb(179, 186, 245);
+                            
+                            border-radius: 1rem;
+                            padding: .3rem .3rem;
+                            cursor: pointer;
+                            transition: background-color .3s;
+                            &:hover {
+                                background-color: rgb(179, 186, 245);
+                    
+                            }   
+                        }
+                        button {
+                            margin-left: 1rem;
+                            text-align: center;
+                            margin-top: 0;
+                            background-color: transparent;
+                            border: 1px solid rgb(179, 186, 245);
+                            font-size: 1.5rem;
+                            border-radius: 1rem;
+                            padding: .3rem .3rem;
+                            color: white;
+                            cursor: pointer;
+                            transition: background-color .3s;
+                            &:hover {
+                                background-color:brown;
+                                
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        .item_change {
+            input[type="text"] {
+                width: 40%;
+            }
+            label {
+                color: rgb(179, 186, 245);
+            }
+            input[type="radio"] {
+                cursor: pointer;
+            }
+            .img-box {
+                height: 300px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        .orders {
+            table {
+                color:rgb(0, 0, 0);
+                th {
+
+                }
+                tr {
+                    border: 1px solid black;
+                    td {
+                        &.class1 {
+                            width: 5%;
+                        }
+                        &.class2 {
+                            width: 5%;
+                        }
+                        &.class3 {
+                            width: 10%;
+                        }
+                        &.class4 {
+                            width: 5%;
+                        }
+                        &.class5 {
+                            width: 10%;
+                        }
+                        &.class6 {
+                            width: 20%;
+                        }
+                        &.class7 {
+                            width: 10%;
+                        }
+                        &.class8 {
+                            width: 10%;
+                        }
+                        &.class9 {
+                            width: 10%;
+                        }
+                        &.class10 {
+                            width: 10%;
+                        }
+                    }
+                    &.padding {
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .logout {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        padding: .5rem 2rem;
+        font-size: 2rem;
+        border: 1px solid rgb(255, 0, 0);
+        color: white;
+        background-color:  rgb(189, 11, 11);
+        text-decoration: none;
+        border-radius: 1rem;
+        &:hover {            
+            background-color:  rgb(255, 0, 0);
+        }
+    }
+}

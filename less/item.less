@@ -1,0 +1,180 @@
+.section-title {    
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1rem;    
+    h2 {
+        display: inline-block;
+        font-size: 3rem;
+        //transform: translateY(-20px);
+        padding: 0 2rem;
+        background-color: white;    
+        color: rgb(122, 88, 185);
+    }
+    .line {
+        border-top: 1px solid rgb(122, 88, 185); 
+        border-bottom: none; 
+        margin-top: 6rem;      
+    }
+}
+
+.catalog {
+    .catalog-item-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+        .item-img {
+            width: 50%;
+            text-align: center;
+            border: 1px solid rgb(122, 88, 185);
+            padding: 1rem 0;
+            height: 400px;
+            img {
+                height: 100%;
+            }
+        }
+        .item-description {
+            height: 400px;
+            width: 45%;
+            .description {
+                border-bottom: 1px solid #000;
+                margin-bottom: 2rem;
+                height: 200px;
+                p {
+                    font-size: 2rem;
+                } 
+            }
+            .to-cart-buts {
+                height: 200px;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .imgbox {
+                    text-align: center;
+                    width: 100%;
+                    max-height: 150px;
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                button {
+                    width: 40%;
+                    
+                    text-align: center;
+                    border: 1px solid rgb(122, 88, 185);       
+                    border-radius: 2rem;
+                    padding: 1rem .5rem;
+                    text-transform: uppercase;
+                    &.to-cart {
+                        color: white;                       
+                        background-color: rgb(122, 88, 185);
+                        &:hover {              
+                            color: rgb(255, 255, 255);                                 
+                            background-color: rgb(166, 122, 248);
+                            border: 1px solid  rgb(166, 122, 248);   
+                        }    
+                    }
+                    
+                }
+                .quick-to-cart {
+                    color:  rgb(122, 88, 185);
+                    background-color: rgb(255, 255, 255);   
+                    width: 40%;
+                    text-align: center;
+                    border: 1px solid rgb(122, 88, 185);       
+                    border-radius: 2rem;
+                    padding: 1rem .5rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover {       
+                        color: rgb(0, 0, 0);                                    
+                        background-color: rgb(166, 122, 248);
+                        border: 1px solid  rgb(166, 122, 248);   
+                    }  
+                }
+            }            
+            
+        }
+        
+    }
+}
+
+//############################# M E D I A #############################//
+
+@media (max-width: 575px) { 
+
+    .catalog {
+        .catalog-item-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            .item-img {
+                width: 100%;
+                text-align: center;
+                border: 1px solid rgb(122, 88, 185);
+                padding: 1rem 0;
+                height: 300px;
+                margin-bottom: 2rem;
+                img {
+                    height: 100%;
+                }
+            }
+            .item-description {
+                height: auto;
+                width: 100%;
+                .description {
+                    border-bottom: 1px solid #000;
+                    margin-bottom: 2rem;
+                    height: 200px;
+                    p {
+                        font-size: 2rem;
+                    } 
+                }
+                .to-cart-buts {
+                    height: auto;
+                    font-size: 1.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .imgbox {
+                        display: none;
+                    }
+    
+                    button {
+                        width: 40%;
+                        height: 20%;
+                        text-align: center;
+                        border: 1px solid rgb(122, 88, 185);       
+                        border-radius: 2rem;
+                        padding: 1rem .5rem;
+                        text-transform: uppercase;
+                        &.to-cart {
+                            color: white;                       
+                            background-color: rgb(122, 88, 185);
+                            &:hover {              
+                                color: rgb(255, 255, 255);                                 
+                                background-color: rgb(166, 122, 248);
+                                border: 1px solid  rgb(166, 122, 248);   
+                            }    
+                        }
+                        &.quick-to-cart {
+                            color:  rgb(122, 88, 185);
+                            background-color: rgb(255, 255, 255);   
+                            &:hover {       
+                                color: rgb(0, 0, 0);                                    
+                                background-color: rgb(166, 122, 248);
+                                border: 1px solid  rgb(166, 122, 248);   
+                            }  
+                        }
+                    }
+                }            
+                
+            }
+            
+        }
+    }
+}

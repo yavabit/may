@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;
+    
+}
+body {
+    background-color: rgb(71, 70, 68);
+    height: 100vh;
+    display: flex;    
+    justify-content: center;
+}
+.admin-log {
+    width: 25%;
+    form {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid rgb(179, 186, 245);
+        border-radius: 1rem;
+        padding: 1rem 3rem;
+        font-size: 2rem;
+    }
+    label {
+        display: block;
+        margin-bottom: .5rem;
+        margin-top: 2.5rem;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    input {
+        text-align: center;
+        font-size: 2rem;       
+        background-color: rgb(71, 70, 68);
+        border: none;        
+        border-bottom: 1px solid rgb(179, 186, 245);
+        padding: .5rem .5rem;
+        &:focus {
+            border: none;        
+        border-bottom: 1px solid rgb(184, 179, 245);
+        outline: none;
+        }
+    }
+    button {
+        margin-top: 3rem;
+        background-color: transparent;
+        border: 1px solid rgb(179, 186, 245);
+        font-size: 2rem;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: background-color .3s;
+        &:hover {
+            background-color: rgb(179, 186, 245);
+
+        }
+        
+    }
+    a {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        display: inline-block;
+        padding: 1rem 1rem;
+        border: 1px solid  rgb(179, 186, 245);
+        text-decoration: none;
+        border-radius: 1rem;
+        margin-top: 3rem;
+    }
+    
+}

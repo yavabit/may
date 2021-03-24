@@ -1,0 +1,225 @@
+.user-order {
+    .section-title {
+        margin-bottom: 1rem;
+    }
+    .description {
+        p {
+            font-size: 2rem;
+            color: white;
+            background-color: rgba(168, 74, 74, 0.808);
+            padding: 1rem 1rem;
+        }
+    }
+
+    table {
+        border: 1px solid  rgb(122, 88, 185);
+        font-size: 2rem;
+        width: 100%;
+        
+        tr {
+            th {
+
+            }
+
+            td {
+                border: 1px solid  rgb(122, 88, 185);
+                padding: .5rem .5rem;
+                &:first-child {
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            color:rgb(122, 88, 185);
+            border: 1px solid rgb(122, 88, 185);
+            border-radius: 3rem;
+            //background-color: rgb(122, 88, 185);
+            font-size: 2rem;
+            padding: 1rem 3rem;
+            display: block;
+            &:hover {
+                background-color: rgb(122, 88, 185);
+                border: 1px solid rgb(122, 88, 185);
+                color: white;
+            }
+    
+            &:focus {
+                outline: none;
+            }                
+        }
+        input[type='submit'] {
+            text-transform: uppercase;
+            margin-top: 2rem;
+            color: white;
+            border: 1px solid rgb(122, 88, 185);
+            border-radius: 3rem;
+            background-color: rgb(122, 88, 185);
+            font-size: 2rem;
+            padding: 1rem 3rem;
+            display: block;
+            &:hover {
+                background-color: rgb(166, 122, 248);
+                border: 1px solid rgb(166, 122, 248);
+            }
+    
+            &:focus {
+                outline: none;
+            }
+    
+            &:disabled {
+                color: rgb(255, 255, 255);
+                border: 1px solid rgba(122, 88, 185, 0.678);
+                background-color: rgba(122, 88, 185, 0.678);
+            }
+        }
+    }
+    
+    
+}
+.main-page {
+    a {
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        color:rgb(122, 88, 185);
+        border: 1px solid rgb(122, 88, 185);
+        border-radius: 3rem;
+        //background-color: rgb(122, 88, 185);
+        font-size: 2rem;
+        padding: 1rem 1rem;
+        width: 25%;
+        text-align: center;
+        &:hover {
+            background-color: rgb(122, 88, 185);
+            border: 1px solid rgb(122, 88, 185);
+            color: white;
+        }
+    }
+}
+.has-been-paip {
+    p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 575px) { 
+    .user-order {
+        .section-title {
+            margin-bottom: 1rem;
+        }
+        .description {
+            p {
+                font-size: 2rem;
+                color: white;
+                background-color: rgba(168, 74, 74, 0.808);
+                padding: 1rem 1rem;
+            }
+        }
+        
+        table {
+            border: 1px solid  rgb(122, 88, 185);
+            font-size: 2rem;
+            //width: 100%;
+            width: 345px;
+            
+            tr {
+                
+                td {
+                    border: 1px solid  rgb(122, 88, 185);
+                    padding: .5rem .5rem;                                      
+                    white-space: pre-wrap;
+                    &:first-child {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    
+        .submit {
+            display: block;
+            
+            a {
+                text-decoration: none;
+                display: inline-block;
+                text-align: center;
+                width: 50%;
+                text-transform: uppercase;
+                margin-top: 2rem;
+                color:rgb(122, 88, 185);
+                border: 1px solid rgb(122, 88, 185);
+                border-radius: 3rem;
+                //background-color: rgb(122, 88, 185);
+                font-size: 2rem;
+                padding: 1rem 3rem;
+                display: block;
+                &:hover {
+                    background-color: rgb(122, 88, 185);
+                    border: 1px solid rgb(122, 88, 185);
+                    color: white;
+                }
+        
+                &:focus {
+                    outline: none;
+                }                
+            }
+            input[type='submit'] {
+                text-transform: uppercase;
+                margin-top: 2rem;
+                color: white;
+                border: 1px solid rgb(122, 88, 185);
+                border-radius: 3rem;
+                background-color: rgb(122, 88, 185);
+                font-size: 2rem;
+                padding: 1rem 3rem;
+                display: block;
+                &:hover {
+                    background-color: rgb(166, 122, 248);
+                    border: 1px solid rgb(166, 122, 248);
+                }
+        
+                &:focus {
+                    outline: none;
+                }
+        
+                &:disabled {
+                    color: rgb(255, 255, 255);
+                    border: 1px solid rgba(122, 88, 185, 0.678);
+                    background-color: rgba(122, 88, 185, 0.678);
+                }
+            }
+        }
+        
+        
+    } 
+    .main-page {
+        a {
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            color:rgb(122, 88, 185);
+            border: 1px solid rgb(122, 88, 185);
+            border-radius: 3rem;
+            //background-color: rgb(122, 88, 185);
+            font-size: 2rem;
+            padding: 1rem 1rem;
+            width: 100%;
+            text-align: center;
+            &:hover {
+                background-color: rgb(122, 88, 185);
+                border: 1px solid rgb(122, 88, 185);
+                color: white;
+            }
+        }
+    }
+}
