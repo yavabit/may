@@ -1,36 +1,17 @@
-@-webkit-keyframes fadeRight {
-  0% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes fadeRight {
   0% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    transform: translateX(300px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 .order .order-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .order .order-main .order-info {
   width: 40%;
@@ -44,8 +25,6 @@
   border-bottom: 2px solid #7a58b9;
 }
 .order .order-main .order-info table tr td {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .order .order-main .order-info table tr td img {
@@ -78,10 +57,8 @@
   margin-top: 5rem;
   border: 1px solid #7a58b9;
   padding: 1rem 1rem;
-  -webkit-animation-name: fadeRight;
-          animation-name: fadeRight;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: fadeRight;
+  animation-duration: 1s;
 }
 .order .order-main .order-info .delivery-info h3 {
   font-size: 2rem;
@@ -115,8 +92,7 @@
   border-radius: .5rem;
 }
 .order .order-main .order-form fieldset input:focus {
-  -webkit-box-shadow: 0 0 5px 0 #7a58b9;
-          box-shadow: 0 0 5px 0 #7a58b9;
+  box-shadow: 0 0 5px 0 #7a58b9;
   outline: none;
 }
 .order .order-main .order-form fieldset textarea {
@@ -124,8 +100,7 @@
   border-radius: .5rem;
 }
 .order .order-main .order-form fieldset textarea:focus {
-  -webkit-box-shadow: 0 0 5px 0 #7a58b9;
-          box-shadow: 0 0 5px 0 #7a58b9;
+  box-shadow: 0 0 5px 0 #7a58b9;
   outline: none;
 }
 .order .order-main .order-form fieldset legend {
@@ -138,12 +113,8 @@
 }
 .order .order-main .order-form fieldset.contacts .flex-wrap {
   margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .order .order-main .order-form fieldset.contacts .flex-wrap .contact-tel {
   width: 45%;
@@ -155,12 +126,8 @@
   display: none;
 }
 .order .order-main .order-form fieldset.delivery .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 2rem;
 }
 .order .order-main .order-form fieldset.delivery .flex-wrap .comment {
@@ -182,14 +149,9 @@
   display: inline-block;
 }
 .order .order-main .order-form fieldset.type-order {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .order .order-main .order-form fieldset.type-order legend {
   width: 100%;
@@ -200,8 +162,7 @@
 }
 .order .order-main .order-form fieldset.type-order input:checked + label {
   color: #7a58b9;
-  -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-          box-shadow: 0 0 10px 0 #7a58b9;
+  box-shadow: 0 0 10px 0 #7a58b9;
 }
 .order .order-main .order-form fieldset.type-order input:checked + label.pickup {
   background-image: url(../img/form_pickup_on.png);
@@ -220,8 +181,7 @@
   padding-top: 1rem;
   color: #4d4d4d;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 black;
   padding-bottom: 1rem;
 }
 .order .order-main .order-form fieldset.type-order label.pickup {
@@ -238,8 +198,7 @@
 }
 .order .order-main .order-form fieldset.type-order label:hover {
   color: #7a58b9;
-  -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-          box-shadow: 0 0 10px 0 #7a58b9;
+  box-shadow: 0 0 10px 0 #7a58b9;
 }
 .order .order-main .order-form fieldset.type-order label:hover.pickup {
   background-image: url(../img/form_pickup_on.png);
@@ -255,11 +214,8 @@
 }
 .order .order-main .order-form fieldset.payment {
   display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .order .order-main .order-form fieldset.payment legend {
   width: 100%;
@@ -269,8 +225,7 @@
 }
 .order .order-main .order-form fieldset.payment input:checked + label {
   color: #7a58b9;
-  -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-          box-shadow: 0 0 10px 0 #7a58b9;
+  box-shadow: 0 0 10px 0 #7a58b9;
 }
 .order .order-main .order-form fieldset.payment label {
   text-align: center;
@@ -282,8 +237,7 @@
   text-transform: uppercase;
   padding-top: 1rem;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 black;
   padding-bottom: 1rem;
 }
 .order .order-main .order-form fieldset.payment label.cash {
@@ -306,8 +260,7 @@
 }
 .order .order-main .order-form fieldset.payment label:hover {
   color: #7a58b9;
-  -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-          box-shadow: 0 0 10px 0 #7a58b9;
+  box-shadow: 0 0 10px 0 #7a58b9;
 }
 .order .order-main .order-form fieldset.payment_delivery {
   display: none;
@@ -317,8 +270,7 @@
 }
 .order .order-main .order-form fieldset.payment_delivery input:checked + label {
   color: #7a58b9;
-  -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-          box-shadow: 0 0 10px 0 #7a58b9;
+  box-shadow: 0 0 10px 0 #7a58b9;
 }
 .order .order-main .order-form fieldset.payment_delivery label {
   text-align: center;
@@ -330,8 +282,7 @@
   text-transform: uppercase;
   padding-top: 1rem;
   font-weight: 600;
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 black;
   padding-bottom: 1rem;
   background-image: url(../img/payment_cards.png);
   background-repeat: no-repeat;
@@ -377,14 +328,9 @@ select {
 }
 @media (max-width: 575px) {
   .order .order-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .order .order-main .order-info {
     width: 100%;
@@ -405,10 +351,8 @@ select {
     margin-top: 2rem;
     border: 1px solid #7a58b9;
     padding: 1rem 1rem;
-    -webkit-animation-name: fadeRight;
-            animation-name: fadeRight;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-name: fadeRight;
+    animation-duration: 1s;
   }
   .order .order-main .order-info .delivery-info h3 {
     font-size: 2rem;
@@ -442,8 +386,7 @@ select {
     border-radius: .5rem;
   }
   .order .order-main .order-form fieldset input:focus {
-    -webkit-box-shadow: 0 0 5px 0 #7a58b9;
-            box-shadow: 0 0 5px 0 #7a58b9;
+    box-shadow: 0 0 5px 0 #7a58b9;
     outline: none;
   }
   .order .order-main .order-form fieldset textarea {
@@ -451,8 +394,7 @@ select {
     border-radius: .5rem;
   }
   .order .order-main .order-form fieldset textarea:focus {
-    -webkit-box-shadow: 0 0 5px 0 #7a58b9;
-            box-shadow: 0 0 5px 0 #7a58b9;
+    box-shadow: 0 0 5px 0 #7a58b9;
     outline: none;
   }
   .order .order-main .order-form fieldset legend {
@@ -465,12 +407,8 @@ select {
   }
   .order .order-main .order-form fieldset.contacts .flex-wrap {
     margin-top: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .order .order-main .order-form fieldset.contacts .flex-wrap .contact-tel {
     width: 45%;
@@ -482,16 +420,10 @@ select {
     display: none;
   }
   .order .order-main .order-form fieldset.delivery .flex-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin-top: 2rem;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
   }
   .order .order-main .order-form fieldset.delivery .flex-wrap div {
     width: 30%;
@@ -516,14 +448,9 @@ select {
     display: inline-block;
   }
   .order .order-main .order-form fieldset.type-order {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .order .order-main .order-form fieldset.type-order legend {
     width: 100%;
@@ -534,8 +461,7 @@ select {
   }
   .order .order-main .order-form fieldset.type-order input:checked + label {
     color: #7a58b9;
-    -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-            box-shadow: 0 0 10px 0 #7a58b9;
+    box-shadow: 0 0 10px 0 #7a58b9;
   }
   .order .order-main .order-form fieldset.type-order input:checked + label.pickup {
     background-image: url(../img/form_pickup_on.png);
@@ -554,8 +480,7 @@ select {
     padding-top: 1rem;
     color: #4d4d4d;
     font-weight: 600;
-    -webkit-box-shadow: 0 0 5px 0 black;
-            box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
     padding-bottom: 1rem;
   }
   .order .order-main .order-form fieldset.type-order label.pickup {
@@ -572,8 +497,7 @@ select {
   }
   .order .order-main .order-form fieldset.type-order label:hover {
     color: #7a58b9;
-    -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-            box-shadow: 0 0 10px 0 #7a58b9;
+    box-shadow: 0 0 10px 0 #7a58b9;
   }
   .order .order-main .order-form fieldset.type-order label:hover.pickup {
     background-image: url(../img/form_pickup_on.png);
@@ -586,11 +510,8 @@ select {
   }
   .order .order-main .order-form fieldset.payment {
     display: none;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .order .order-main .order-form fieldset.payment legend {
     width: 100%;
@@ -600,8 +521,7 @@ select {
   }
   .order .order-main .order-form fieldset.payment input:checked + label {
     color: #7a58b9;
-    -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-            box-shadow: 0 0 10px 0 #7a58b9;
+    box-shadow: 0 0 10px 0 #7a58b9;
   }
   .order .order-main .order-form fieldset.payment label {
     text-align: center;
@@ -613,8 +533,7 @@ select {
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: 600;
-    -webkit-box-shadow: 0 0 5px 0 black;
-            box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
     padding-bottom: 1rem;
     font-size: 1.3rem;
   }
@@ -638,8 +557,7 @@ select {
   }
   .order .order-main .order-form fieldset.payment label:hover {
     color: #7a58b9;
-    -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-            box-shadow: 0 0 10px 0 #7a58b9;
+    box-shadow: 0 0 10px 0 #7a58b9;
   }
   .order .order-main .order-form fieldset.payment_delivery {
     display: none;
@@ -649,8 +567,7 @@ select {
   }
   .order .order-main .order-form fieldset.payment_delivery input:checked + label {
     color: #7a58b9;
-    -webkit-box-shadow: 0 0 10px 0 #7a58b9;
-            box-shadow: 0 0 10px 0 #7a58b9;
+    box-shadow: 0 0 10px 0 #7a58b9;
   }
   .order .order-main .order-form fieldset.payment_delivery label {
     text-align: center;
@@ -662,8 +579,7 @@ select {
     text-transform: uppercase;
     padding-top: 1rem;
     font-weight: 600;
-    -webkit-box-shadow: 0 0 5px 0 black;
-            box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
     padding-bottom: 1rem;
     background-image: url(../img/payment_cards.png);
     background-repeat: no-repeat;

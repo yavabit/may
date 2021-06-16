@@ -87,12 +87,8 @@
 .cart .to-order-buts {
   margin-top: 4rem;
   font-size: 1.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-transform: uppercase;
 }
 .cart .to-order-buts .clear-cart {
@@ -102,8 +98,7 @@
   border: 1px solid #a67af8;
   border-radius: 2rem;
   width: 20%;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
 }
 .cart .to-order-buts .clear-cart:hover {
   color: #000000;
@@ -123,8 +118,7 @@
   text-decoration: none;
   width: 20%;
   padding: 1rem .5rem;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
   text-transform: uppercase;
 }
 .cart .to-order-buts .to-order-item:hover {
@@ -251,12 +245,8 @@
   .cart .to-order-buts {
     margin-top: 4rem;
     font-size: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     text-transform: uppercase;
   }
   .cart .to-order-buts .clear-cart {
@@ -266,8 +256,7 @@
     border: 1px solid #a67af8;
     border-radius: 2rem;
     width: 40%;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    transition-duration: .3s;
   }
   .cart .to-order-buts .clear-cart:hover {
     color: #000000;
@@ -287,8 +276,7 @@
     text-decoration: none;
     width: 40%;
     padding: 1rem .5rem;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    transition-duration: .3s;
     text-transform: uppercase;
   }
   .cart .to-order-buts .to-order-item:hover {

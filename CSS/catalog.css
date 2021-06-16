@@ -17,12 +17,8 @@
   margin-top: 6rem;
 }
 .catalog .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .catalog .categories {
   margin-top: 6rem;
@@ -38,8 +34,7 @@
   margin-left: 20%;
   padding: 0 1rem;
   font-size: 2rem;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  transform: translateY(-15px);
   background-color: white;
   color: #7a58b9;
 }
@@ -88,21 +83,15 @@
 }
 .catalog .categories-items {
   width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .catalog .categories-items .category-item {
   margin-bottom: 5rem;
   width: 30%;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 black;
 }
 .catalog .categories-items .category-item .category-img {
   max-height: 340px;
@@ -127,8 +116,7 @@
   font-size: 2rem;
 }
 .catalog .categories-items .category-item:hover {
-  -webkit-box-shadow: 0 0 10px 0 black;
-          box-shadow: 0 0 10px 0 black;
+  box-shadow: 0 0 10px 0 black;
 }
 .catalog .categories-items .category-item:hover .description a h3 {
   color: rgba(255, 0, 179, 0.788);
@@ -142,20 +130,15 @@
   }
   .catalog .categories-items {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .catalog .categories-items .category-item {
     margin-bottom: 5rem;
     width: 40%;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px 0 black;
-            box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
   }
   .catalog .categories-items .category-item .category-img a img {
     width: 100%;

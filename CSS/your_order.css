@@ -20,12 +20,8 @@
   width: 30%;
 }
 .user-order .submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .user-order .submit a {
   text-decoration: none;

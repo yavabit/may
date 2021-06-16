@@ -198,6 +198,15 @@ body {
 
                     .price {
                         font-size: 2rem;
+                        span.old-price {
+                            text-decoration: line-through;
+                            color: darkgray;
+                            font-weight: normal;
+                        }
+    
+                        span.new-price {
+                            color: rgb(214, 5, 5);
+                        }
                     }
 
                     .to-cart-buts {
@@ -258,6 +267,77 @@ body {
                 height: 300px;
                 img {
                     height: 100%;
+                }
+            }
+
+            fieldset#sales {
+
+                .is_wrong {
+                    color: red;
+                    margin-bottom: 0;
+                    display: none;
+                }
+
+                input#add_sale {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+                label[for="add_sale"] {
+                    display: inline-block;
+                    cursor: pointer;                    
+                }
+
+                input#change_sale {
+                    display: none;
+                    &:checked {
+                        +label[for="change_sale"] {
+                            background-color: rgb(179, 186, 245);
+                            color: black;
+                        }
+                    }
+                }          
+                label[for="change_sale"], button#s_but_del {
+                    display: inline-block;
+                    cursor: pointer;
+                    border: 1px solid rgb(179, 186, 245);
+                    padding: 1rem 1rem;
+                    border-radius: 1rem;
+                    margin-right: 2rem;
+                    transition-duration: .5s;
+                    &:hover {
+                        background-color: rgb(179, 186, 245);
+                        color: black;
+                    }
+                }
+
+                div.new-price {
+                    margin-top: 2rem;
+                    border: 1px solid rgb(179, 186, 245);
+                    padding: 1rem 1rem;
+                    display: none;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 50%;
+                    .m {
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font-size: 2rem;
+                        color: black;
+                        font-weight: 600;
+                        width: 100%;
+                    }
+                    div {
+                        width: 45%;
+                    }
+                    input {
+                        width: 100%;
+                    }
+                    label {
+                        width: 100%;
+                    }
                 }
             }
         }

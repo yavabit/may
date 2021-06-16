@@ -40,7 +40,7 @@
                 <?php for($i = 0; $i < count($categories)-1; $i++): ?>
                 <div class="category-item">
                     <div class="category-img">
-                        <a href="<?= $categories[$i]['url'] ?>"><img src="img/catalog-items/item_example.jpeg" alt=""></a>
+                        <a href="<?= $categories[$i]['url'] ?>"><img src="<?= $categories[$i]['imgUrl'] ?>" alt=""></a>
                     </div>
                     <div class="description">
                         <a href="<?= $categories[$i]['url'] ?>"><h3><?=$categories[$i]['title']?></h3></a>

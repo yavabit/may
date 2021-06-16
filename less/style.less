@@ -302,12 +302,24 @@ header {
                     }
                 }
             }
+
             .price {
                 margin-bottom: 2rem;
+
                 p {
-                   font-size: 2.2rem;
-                   color:  rgb(122, 88, 185);
-                   font-weight: bold;
+                    font-size: 2.2rem;
+                    color: rgb(122, 88, 185);
+                    font-weight: bold;
+
+                    span.old-price {
+                        text-decoration: line-through;
+                        color: darkgray;
+                        font-weight: normal;
+                    }
+
+                    span.new-price {
+                        color: rgb(214, 5, 5);
+                    }
                 }
             }
             .to-cart-buts {
@@ -358,6 +370,7 @@ header {
         //flex-wrap: wrap;
         width: 100%;
         text-align: center;
+        margin-bottom: 8rem;
         a {
             padding: 1rem 3.5rem;
             background-color: rgb(122, 88, 185);

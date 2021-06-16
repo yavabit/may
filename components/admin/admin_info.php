@@ -6,14 +6,14 @@
     if($_GET['type'] == 'changing') {
         if(isset($_GET['search'])) {
             $search_query = $_GET['search'];
-            $sql = "SELECT * FROM `catalog` WHERE `title` LIKE '%$search_query%'";
+            $sql = "SELECT * FROM `catalog` LEFT JOIN sales USING(id) WHERE `title` LIKE '%$search_query%'";
             $result = mysqli_query($link, $sql);
 
         } else if (!isset($_GET['search'])) {
-            $sql = "SELECT * FROM `catalog`";
+            $sql = "SELECT * FROM `catalog` LEFT JOIN sales USING(id)";
             $result = mysqli_query($link, $sql);            
         }
-        $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);        
+        $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);     
     }
     
 ?>
@@ -34,8 +34,7 @@
             <div class="admin-main-menu">
                 <h2>Меню</h2>
                 <ul class="admin-list">
-                    <li><a href="admin_info.php?change=catalog">Изменить каталог</a></li>                    
-                    <!-- <li><a href="admin.php?change=delivery">Изменить доставку</a></li>  -->
+                    <li><a href="admin_info.php?change=catalog">Изменить каталог</a></li>                                       
                     <li><a href="admin_info.php?change=orders">Заказы</a></li>
                     <li><a href="admin_info.php?change=catalog">Ссылки на хостинг и БД</a></li>
                 </ul>
@@ -119,12 +118,17 @@
                             <div class="title">
                                 <h4><?= $item['title'] ?></a></h4>
                             </div>
-                            <div class="price">
-                                <p><?= $item['price'];?> ₽</p>
+                            <div class="price">                            
+                                <?php if($item['old_price'] == NULL):?>
+                                    <p><?= $item['price'] ?> ₽</p>
+                                <?php endif;?>
+                                <?php if($item['old_price'] != NULL):?>
+                                    <p><span class="old-price"><?= $item['old_price'] ?> ₽</span> <span class="new-price"><?= $item['price'] ?> ₽</span></p>
+                                <?php endif;?>
                             </div>
                             <div class="to-cart-buts">
                                 <a href="admin_info.php?change=catalog&type=item_change&id=<?=$item['id']?>">Изменить товар</a>
-                                <button  form="remove_catalog" onclick="remove_cat(<?=$item['id']?>)">Удалить товар</button>
+                                <button   onclick="remove_cat(<?=$item['id']?>)">Удалить товар</button>
                                 
                             </div>
                         </div>
@@ -137,8 +141,8 @@
                 
                 <section class="item_change">
                     <?php 
-                        $id = $_GET['id'];                        
-                        $sql = "SELECT * FROM `catalog` WHERE `id` = $id;";
+                        $id = $_GET['id']; 
+                        $sql = "SELECT * FROM `catalog` LEFT JOIN sales USING(id) WHERE `id` = $id;";
                         $result = mysqli_query($link, $sql);
                         $rows = mysqli_fetch_array($result);
                         
@@ -181,15 +185,67 @@
 
                         <label for="new">Отметки</label>
                         <fieldset id="new">                            
-                            <input type="radio" name="special" id="is_new_11" value="new" required>
+                            <input type="radio" name="special" id="is_new_11" value="new" <?= $rows['is_new'] == 1 ? 'checked' : ''?> required>
                             <label for="is_new_11">Новое</label>                            
-                            <input type="radio" name="special" id="is_new_02" value="pop">
+                            <input type="radio" name="special" id="is_new_02" <?= $rows['is_popular'] == 1 ? 'checked' : ''?> value="pop">
                             <label for="is_new_02">Популярное</label>
-                            <input type="radio" name="special" id="is_new_01" value="0">
+                            <input type="radio" name="special" id="is_new_01" <?= ($rows['is_new'] != 1 && $rows['is_popular'] != 1) ? 'checked' : ''?> value="0">
                             <label for="is_new_01">Нет</label>
                         </fieldset>
+
+                        <label for="sales">Скидки</label>
+                        <fieldset id="sales">
                         
-                        <button type="submit">Сохранить изменения</button>
+                        <?php if(!isset($rows['old_price'])):?>
+                            <input type="checkbox" id="add_sale" name="add_sale">
+                            <label for="add_sale">- Добавить скидку</label>                            
+                            <p class="is_wrong">Новая цена превышает старую. Для начала, пожалуйста, измените цену товара, а затем добавьте скидку!</p>
+                            <div class="new-price">
+                                <p>Введите одно из значений</p>
+                                <div class="m">
+                                    <label for="old_price">Старая цена</label>
+                                    <input type="number" id="old_price" name="old_price" value="<?=$rows['price']?>" readonly style="font-weight: bold" placeholder="1000">
+                                </div>
+                                <div>
+                                    <label for="new_price">Новая цена</label>
+                                    <input type="number" id="new_price" name="new_price">
+                                </div>
+                                
+                                <div>
+                                    <label for="sale_percent">Скидка в процентах</label>
+                                    <input type="number" id="sale_percent" name="sale_percent" placeholder="10">
+                                </div>                                
+                            </div>
+                        <?php endif;?>
+
+                        <?php if(isset($rows['old_price'])):?>
+                            <input type="checkbox" id="change_sale" name="change_sale">
+                            <label for="change_sale">Изменить скидку</label> 
+                            
+                            <button id="s_but_del" style="color: orangered" onclick="remove_sale(<?=$rows['id']?>)">Удалить скидку</button>
+
+                            <p class="is_wrong">Новая цена превышает старую. Для начала, пожалуйста, измените цену товара, а затем добавьте скидку!</p>
+                            <div class="new-price">
+                                <p>Введите одно из значений</p>
+                                <div class="m">
+                                    <label for="old_price">Старая цена</label>
+                                    <input type="number" id="old_price" name="old_price" value="<?=$rows['price']?>" readonly style="font-weight: bold" placeholder="1000">
+                                </div>
+                                <div>
+                                    <label for="new_price">Новая цена</label>
+                                    <input type="number" id="new_price" name="new_price">
+                                </div>
+                                
+                                <div>
+                                    <label for="sale_percent">Скидка в процентах</label>
+                                    <input type="number" id="sale_percent" name="sale_percent" placeholder="10">
+                                </div>                                
+                            </div>
+                        <?php endif;?>
+                            
+                        </fieldset>
+                        
+                        <button type="submit" id="sub_but">Сохранить изменения</button>
                     </form>
                     
                 </section>
@@ -197,7 +253,9 @@
 
             <?php endif; ?>
 
+
             <?php if ($_GET['change'] === 'orders'): ?>
+
             <?php
                 $sql = "SELECT * FROM `orders`";
                 $result = mysqli_query($link, $sql); 
@@ -259,6 +317,7 @@
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
     <script src="add_to_catalog.js"></script>  
-    <script src="remove_catalog.js"></script>  
+    <script src="remove_catalog.js"></script> 
+    <script src="catalog_sales.js"></script> 
 </body>
 </html>

@@ -102,7 +102,12 @@
                             <h4><a href="item.php?id=<?=$item['id']?>"><?= $item['title'] ?></a></h4>
                         </div>
                         <div class="price">
-                            <p><?= $item['price'];?> ₽</p>
+                            <?php if($item['old_price'] == NULL):?>
+                                <p><?= $item['price'] ?> ₽</p>
+                            <?php endif;?>
+                            <?php if($item['old_price'] != NULL):?>
+                                <p><span class="old-price"><?= $item['old_price'] ?> ₽</span> <span class="new-price"><?= $item['price'] ?> ₽</span></p>
+                            <?php endif;?>
                         </div>
                         <div class="to-cart-buts">
                             <button id="addCart_<?=$item['id'];?>" class="to-cart" onclick="addToCart(<?=$item['id'];?>)" title="Добавить <?=$item['title']?> в корзину">

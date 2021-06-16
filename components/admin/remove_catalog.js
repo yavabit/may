@@ -1,11 +1,25 @@
 function remove_cat(itemID) {
-    //var form_data = $(this).serialize(); // Собираем все данные из формы
-    $.ajax({
-        type: "POST", // Метод отправки
-        url: "remove_catalog.php", // Путь до php файла отправителя
-        data: { id: itemID },
-        success: function (data) {
-            alert('Товар удален');
-        }
-    });
+    if(confirm('Подтвердите удаление')){
+        $.ajax({
+            type: "POST", // Метод отправки
+            url: "remove_catalog.php", // Путь до php файла отправителя
+            data: { id: itemID, action: 'catalog'},
+            success: function (data) {
+                alert('Товар удален');
+            }
+        });
+    }
+}; 
+
+function remove_sale(itemID) {
+    if(confirm('Подтвердите удаление')){
+        $.ajax({
+            type: "POST", // Метод отправки
+            url: "remove_catalog.php", // Путь до php файла отправителя
+            data: { id: itemID, action: 'sales'},
+            success: function (data) {
+                alert('Скидка на товар удалена');
+            }
+        });
+    }    
 };

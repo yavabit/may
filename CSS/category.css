@@ -17,14 +17,9 @@
   margin-top: 6rem;
 }
 .catalog .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .catalog .categories {
   margin-top: 6rem;
@@ -40,8 +35,7 @@
   margin-left: 20%;
   padding: 0 1rem;
   font-size: 2rem;
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  transform: translateY(-15px);
   background-color: white;
   color: #7a58b9;
 }
@@ -77,14 +71,9 @@
   color: white;
 }
 .catalog .catalog-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 75%;
 }
 .catalog .catalog-items .sort {
@@ -98,11 +87,8 @@
   padding-left: 1rem;
   font-size: 1.5rem;
   margin-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .catalog .catalog-items .sort form label {
   padding-top: .5rem;
@@ -135,7 +121,6 @@
   border-left: 2px solid #7a58b9;
   background-color: #7a58b9;
   color: white;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 .catalog .catalog-items .sort form input[type="submit"]:hover {
@@ -148,13 +133,11 @@
   width: 30%;
   margin-bottom: 5rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
+  box-shadow: 0 0 5px 0 black;
   position: relative;
 }
 .catalog .catalog-item:hover {
-  -webkit-box-shadow: 0 0 10px 0 black;
-          box-shadow: 0 0 10px 0 black;
+  box-shadow: 0 0 10px 0 black;
 }
 .catalog .catalog-item .catalog-item-img {
   max-height: 294px;
@@ -196,12 +179,8 @@
 }
 .catalog .catalog-item .description .to-cart-buts {
   font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .catalog .catalog-item .description .to-cart-buts button {
   width: 48%;
@@ -211,8 +190,7 @@
   padding: 1rem .5rem;
 }
 .catalog .catalog-item .description .to-cart-buts button:hover {
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
 }
 .catalog .catalog-item .description .to-cart-buts .to-cart {
   color: white;
@@ -245,8 +223,7 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
 }
 .catalog .to-catalog a:hover {
   color: #ffffff;
@@ -277,8 +254,7 @@
   border-radius: 4px;
   color: #7a58b9;
   text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .page-buttons li a:hover {
   cursor: pointer;
@@ -304,11 +280,8 @@
     display: none;
   }
   .catalog .catalog-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
   }
   .catalog .catalog-items .sort {
@@ -353,12 +326,8 @@
   }
   .catalog .catalog-items .sort form .flx-but {
     width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     margin-right: 10%;
   }
   .catalog .catalog-items .sort form input[type="submit"] {
@@ -371,13 +340,11 @@
     width: 45%;
     margin-bottom: 4rem;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px 0 black;
-            box-shadow: 0 0 5px 0 black;
+    box-shadow: 0 0 5px 0 black;
     position: relative;
   }
   .catalog .catalog-item:hover {
-    -webkit-box-shadow: 0 0 10px 0 black;
-            box-shadow: 0 0 10px 0 black;
+    box-shadow: 0 0 10px 0 black;
   }
   .catalog .catalog-item .catalog-item-img {
     max-height: 175px;
@@ -418,8 +385,6 @@
   }
   .catalog .catalog-item .description .to-cart-buts {
     font-size: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .catalog .catalog-item .description .to-cart-buts button {
@@ -431,8 +396,7 @@
     padding: 1rem .5rem;
   }
   .catalog .catalog-item .description .to-cart-buts button:hover {
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    transition-duration: .3s;
   }
   .catalog .catalog-item .description .to-cart-buts .to-cart {
     color: white;
@@ -459,8 +423,7 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    -webkit-transition-duration: .3s;
-            transition-duration: .3s;
+    transition-duration: .3s;
   }
   .catalog .to-catalog a:hover {
     color: #ffffff;
@@ -491,8 +454,7 @@
     border-radius: 4px;
     color: #7a58b9;
     text-decoration: none;
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
+    transition-duration: 0.5s;
   }
   .page-buttons li a:hover {
     cursor: pointer;
@@ -508,10 +470,8 @@
     width: 100%;
     border: 1px solid #7a58b9;
     text-transform: uppercase;
-    -webkit-animation-name: fade_up;
-            animation-name: fade_up;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-name: fade_up;
+    animation-duration: 1s;
     display: none;
     position: fixed;
     z-index: 200;

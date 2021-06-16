@@ -30,8 +30,33 @@
     //$img = 'img/catalog-items/'.basename($photo['name']);
    
     
+    
+    
+    if(isset($_POST['add_sale'])) {
+        $old_price = $_POST['old_price'];
+        $new_price = $_POST['new_price'];
+        $sale = $_POST['sale_percent'];
+
+        $sql = "INSERT INTO `sales` VALUES($id,$old_price,$sale)";
+        $result = mysqli_query($link, $sql);   
+
+        $price = $new_price;        
+    }
+
+    if (isset($_POST['change_sale'])) {
+        
+        $old_price = $_POST['old_price'];
+        $new_price = $_POST['new_price'];
+        $sale = $_POST['sale_percent'];
+
+        $sql = "UPDATE `sales` SET `old_price` = $old_price, `Скидка` = $sale WHERE `id` = $id";
+        $result = mysqli_query($link, $sql);   
+
+        $price = $new_price;        
+    }
+
     $sql = "UPDATE `catalog` SET `title` = '$title',`imgUrl` = '$img',`category`='$category',`type`='$type',`price`=$price,`is_new`=$new,`is_popular`=$pop WHERE `id`=$id";
-    $result = mysqli_query($link, $sql);   
+    $result = mysqli_query($link, $sql);
     
     header('Location: admin_info.php?change=catalog&type=changing');
     

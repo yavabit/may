@@ -25,7 +25,6 @@
                     <ul>
                         <li><span class="location-all"></span>Россия, Старый Оскол</li>
                         <li><span class="location-on"></span>Космос мкр. 9а, с 9:00 до 21:00</li>
-                        <li><span class="location-on"></span>проспект Комсомольский 73а, c 9:00 до 21:00</li>
                         <li><a href=""><span class="map"></span>Мы на карте</a></li>
                         <li><a href="tel: +79999999999" class="telephone"><span class="tel"></span>+7(999)999 99 99</a><a href="tel: +79999999999"><span class="tel"></span>+7(999)999 99 99</a></li>                        
                         <li><a href="email"><span class="email"></span>Почта</a></li>                        
