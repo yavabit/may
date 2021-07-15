@@ -4,15 +4,23 @@ html {
 body {
   background-color: #474644;
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .admin-log {
   width: 25%;
+  margin-left: 37%;
+  margin-right: 37%;
 }
 .admin-log form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   border: 1px solid #b3baf5;
   border-radius: 1rem;
@@ -48,6 +56,7 @@ body {
   border-radius: 1rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
 .admin-log button:hover {
@@ -63,4 +72,23 @@ body {
   text-decoration: none;
   border-radius: 1rem;
   margin-top: 3rem;
+}
+.forgot_pass {
+  width: 25%;
+  margin-left: 37%;
+  margin-right: 37%;
+  display: none;
+}
+.forgot_pass h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.forgot_pass p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+.forgot_pass a {
+  color: #3c82df;
+  font-size: 2rem;
 }

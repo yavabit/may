@@ -109,6 +109,9 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+.admin .submenu input#title {
+  width: 50%;
+}
 .admin .submenu fieldset {
   padding-left: 3rem;
   margin-top: 1rem;
@@ -119,12 +122,19 @@ body {
 }
 .admin .submenu fieldset#new label,
 .admin .submenu fieldset#type label,
-.admin .submenu fieldset#popular label {
+.admin .submenu fieldset#popular label,
+.admin .submenu fieldset#add_price_ad label {
   display: inline-block;
   border-right: 1px solid black;
   margin-right: 3rem;
   padding-right: 3rem;
   padding-left: 0.5rem;
+}
+.admin .submenu fieldset#add_price_ad .box_with_sale {
+  display: none;
+}
+.admin .submenu fieldset#add_price_ad .box_without_sale {
+  display: none;
 }
 .admin .submenu button {
   margin-top: 3rem;

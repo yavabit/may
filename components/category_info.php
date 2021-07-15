@@ -14,9 +14,9 @@
     <title><?=$type_title?></title>
 </head>
 <body>
-    
+
     <?php include('header.php');?>
-    
+
     <section class="catalog">
         <div class="container">
             <div class="categories">
@@ -34,8 +34,8 @@
                     <?php endfor; ?>
                 </ul>
             </div>
-             
-            <button class="category-menu-button"></button>            
+
+            <button class="category-menu-button"></button>
             <div class="mob-categories">
                 <h4>Категории</h4>
                 <ul>
@@ -52,41 +52,42 @@
                 </ul>
                 <button class="close-but"><img src="img/close_menu.png" alt=""></button>
             </div>
-            
+
             <div class="catalog-items">
-                <div class="section-title">  
-                    <div class="line"></div>                  
+                <div class="section-title">
+                    <div class="line"></div>
                     <h2><?= $type_title ?></h2>
-                </div> 
-                <div class="sort">                    
+                </div>
+                <div class="sort">
                     <form action="category.php" id='form_sort' method="GET">
                     <div class="flx-wrap1">
                         <label for="sort_by_price">Цена:</label>
                         <select name="sort_by_price" id="sort_by_price">
-                            
+
                             <option value="none">Нет</option>
-                            <option value="ASC" <?= $_GET['sort_by_price'] == 'ASC' ? 'selected' : ''?>>От минимальной к максимальной</option>
-                            <option value="DESC" <?= $_GET['sort_by_price'] == 'DESC' ? 'selected' : ''?>>От макисмальной к минимальной</option>                            
+                            <option value="ASC" <?= $_GET['sort_by_price'] == 'ASC' ? 'selected' : ''?>>Сначала недорогие</option>
+                            <option value="DESC" <?= $_GET['sort_by_price'] == 'DESC' ? 'selected' : ''?>>Сначала дорогие</option>
                         </select>
                         </div>
                         <div class="flx-wrap2">
                         <input type="hidden" name="cat_type" value="<?=$type?>">
-                        
+
                         <label for="sort_by_type">Цветы:</label>
                         <select name="sort_by_type" id="sort_by_type">
                             <option value="Все">Все</option>
                             <option value="Тюльпан" <?= $_GET['sort_by_type'] == 'Тюльпан' ? 'selected' : ''?>>Тюльпан</option>
                             <option value="Роза" <?= $_GET['sort_by_type'] == 'Роза' ? 'selected' : ''?>>Роза</option>
-                        </select>      
+                        </select>
                     </div>
-                    <div class="flx-but">                     
-                        <input type="submit" value="Показать"> 
-                    </div>                    
+                    <div class="flx-but">
+                        <input type="submit" value="Показать">
+                    </div>
                     </form>
                 </div>
+                
                 <?php foreach($items_on_page as $item): ?>
-                <div class="catalog-item">                    
-                    <div class="catalog-item-img">                        
+                <div class="catalog-item">
+                    <div class="catalog-item-img">
                         <a href="item.php?id=<?=$item['id']?>">
                             <?php if($item['is_popular'] == 1): ?>
                                 <span><img src="img/pop.png" alt=""></span>
@@ -116,15 +117,15 @@
                         <a href="cart.php" class="quick-to-cart" onclick="addToCart(<?=$item['id'];?>, 'quick')">Быстрый заказ</a>
                         </div>
                     </div>
-                </div>                       
+                </div>
                 <?php endforeach; ?>
                 <div class="page-buttons">
                 <?php for($i = 1; $i <= $pages; $i = $i + 1): ?>
-                    <li>                    
+                    <li>
                     <a href="category.php?cat_type=<?=$type?>&page=<?= $i ?>&sort_by_type=<?=$sort_type?>&sort_by_price=<?=$sort_price?>" class="<?= $i === $page ? 'current' : ''?>"> <?= $i ?> </a>
                     </li>
                 <?php endfor; ?>
-                </div>                
+                </div>
             </div>
         </div>
     </section>

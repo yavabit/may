@@ -26,12 +26,12 @@
                 <div class="item-img">
                     <img src="<?=$rows['imgUrl']?>" alt="" onclick="imgScale()" id="mainImg">
                     <?php if($countItemsImages):?>
-                    <div class="other-imgs">
-                        <img src="<?=$rows['imgUrl']?>" alt="" id="img_mainSmallImg" class="focused" onclick="changeImg('mainSmallImg')">
-                        <?php for($i = 1; $i<=count($rows_images)/2-1;$i++):?>
-                        <img src="<?=$rows_images['imgUrl_'.$i]?>" alt="" id=<?="img_".$i?> onclick="changeImg(<?=$i?>)">
-                        <?php endfor;?>
-                    </div>
+                        <div class="other-imgs">
+                            <img src="<?=$rows['imgUrl']?>" alt="" id="img_mainSmallImg" class="focused" onclick="changeImg('mainSmallImg')">
+                            <?php for($i = 1; $i<=$counts;$i++):?>
+                                <img src="<?=$rows_images[0][$i]?>" alt="" id=<?="img_".$i?> onclick="changeImg(<?=$i?>)">
+                            <?php endfor;?>
+                        </div>
                     <?php endif; ?>
                 </div>
                 <div class="item-img-scale">
@@ -39,10 +39,13 @@
                 </div>
                 <div class="item-description">
                     <div class="description">
-                        <p><?=$rows['price']?> рублей</p>
-                        <p>Категория: <?=$rows['category']?></p>
-                        <p>Тип: <?=$rows['type']?></p>
-                        <p>В наличии</p>
+                        <?php if($rows['old_price'] == NULL):?>
+                            <p><?= $rows['price'] ?> ₽</p>
+                        <?php endif;?>
+                        <?php if($rows['old_price'] != NULL):?>
+                            <p><span class="old-price"><?= $rows['old_price'] ?> ₽</span> <span class="new-price"><?= $rows['price'] ?> ₽</span></p>
+                        <?php endif;?>
+                        <p>Шаблон текста описания. Шаблон текста описания.Шаблон текста описания.Шаблон текста описания. Шаблон текста описания.</p>
                     </div>
                     <div class="to-cart-buts">
                         <div class="imgbox">

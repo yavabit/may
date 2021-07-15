@@ -79,6 +79,15 @@
 .catalog .catalog-item-block .item-description .description p {
   font-size: 2rem;
 }
+.catalog .catalog-item-block .item-description .description p .old-price {
+  text-decoration: line-through;
+}
+.catalog .catalog-item-block .item-description .description p .new-price {
+  font-size: 2.5rem;
+  color: #d60505;
+  margin-left: 2rem;
+  font-weight: 600;
+}
 .catalog .catalog-item-block .item-description .to-cart-buts {
   height: 200px;
   font-size: 1.5rem;

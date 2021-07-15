@@ -1,20 +1,20 @@
-.section-title {    
+.section-title {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
     h2 {
         display: inline-block;
         font-size: 3rem;
         //transform: translateY(-20px);
         padding: 0 2rem;
-        background-color: white;    
+        background-color: white;
         color: rgb(122, 88, 185);
     }
     .line {
-        border-top: 1px solid rgb(122, 88, 185); 
-        border-bottom: none; 
-        margin-top: 6rem;      
+        border-top: 1px solid rgb(122, 88, 185);
+        border-bottom: none;
+        margin-top: 6rem;
     }
 }
 
@@ -22,7 +22,7 @@
     .catalog-item-block {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;       
+        flex-wrap: wrap;
         .item-img {
             width: 50%;
             text-align: center;
@@ -43,12 +43,12 @@
                     margin-right: 1rem;
                     border: 1px solid rgb(122, 88, 185);
                     transition-duration: 0.3s;
-                   
+
                     &:last-child {
                         margin-right: 0;
                     }
                     &:hover {
-                        cursor: pointer;                        
+                        cursor: pointer;
                         transform: scale(1.2);
                     }
                     &.focused {
@@ -62,7 +62,7 @@
             top: 10%;
             left: 35%;
             //transform: translate(-50%, 0%);
-            display: none;    
+            display: none;
             z-index: 200;
             border: 1px solid rgb(122, 88, 185);
             border-radius: 10px;
@@ -81,7 +81,17 @@
                 height: 200px;
                 p {
                     font-size: 2rem;
-                } 
+                    .old-price {
+
+                        text-decoration: line-through;
+                    }
+                    .new-price {
+                        font-size: 2.5rem;
+                        color: #d60505;
+                        margin-left: 2rem;
+                        font-weight: 600;
+                    }
+                }
             }
             .to-cart-buts {
                 height: 200px;
@@ -100,56 +110,56 @@
 
                 button {
                     width: 40%;
-                    
+
                     text-align: center;
-                    border: 1px solid rgb(122, 88, 185);       
+                    border: 1px solid rgb(122, 88, 185);
                     border-radius: 2rem;
                     padding: 1rem .5rem;
                     text-transform: uppercase;
                     &.to-cart {
-                        color: white;                       
+                        color: white;
                         background-color: rgb(122, 88, 185);
-                        &:hover {              
-                            color: rgb(255, 255, 255);                                 
+                        &:hover {
+                            color: rgb(255, 255, 255);
                             background-color: rgb(166, 122, 248);
-                            border: 1px solid  rgb(166, 122, 248);   
-                        }    
+                            border: 1px solid  rgb(166, 122, 248);
+                        }
                     }
-                    
+
                 }
                 .quick-to-cart {
                     color:  rgb(122, 88, 185);
-                    background-color: rgb(255, 255, 255);   
+                    background-color: rgb(255, 255, 255);
                     width: 40%;
                     text-align: center;
-                    border: 1px solid rgb(122, 88, 185);       
+                    border: 1px solid rgb(122, 88, 185);
                     border-radius: 2rem;
                     padding: 1rem .5rem;
                     text-decoration: none;
                     text-transform: uppercase;
-                    &:hover {       
-                        color: rgb(0, 0, 0);                                    
+                    &:hover {
+                        color: rgb(0, 0, 0);
                         background-color: rgb(166, 122, 248);
-                        border: 1px solid  rgb(166, 122, 248);   
-                    }  
+                        border: 1px solid  rgb(166, 122, 248);
+                    }
                 }
-            }            
-            
+            }
+
         }
-        
+
     }
 }
 
 //############################# M E D I A #############################//
 
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
 
     .catalog {
         .catalog-item-block {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            
+
             .item-img {
                 width: 100%;
                 text-align: center;
@@ -170,7 +180,7 @@
                     height: 200px;
                     p {
                         font-size: 2rem;
-                    } 
+                    }
                 }
                 .to-cart-buts {
                     height: auto;
@@ -181,38 +191,38 @@
                     .imgbox {
                         display: none;
                     }
-    
+
                     button {
                         width: 40%;
                         height: 20%;
                         text-align: center;
-                        border: 1px solid rgb(122, 88, 185);       
+                        border: 1px solid rgb(122, 88, 185);
                         border-radius: 2rem;
                         padding: 1rem .5rem;
                         text-transform: uppercase;
                         &.to-cart {
-                            color: white;                       
+                            color: white;
                             background-color: rgb(122, 88, 185);
-                            &:hover {              
-                                color: rgb(255, 255, 255);                                 
+                            &:hover {
+                                color: rgb(255, 255, 255);
                                 background-color: rgb(166, 122, 248);
-                                border: 1px solid  rgb(166, 122, 248);   
-                            }    
+                                border: 1px solid  rgb(166, 122, 248);
+                            }
                         }
                         &.quick-to-cart {
                             color:  rgb(122, 88, 185);
-                            background-color: rgb(255, 255, 255);   
-                            &:hover {       
-                                color: rgb(0, 0, 0);                                    
+                            background-color: rgb(255, 255, 255);
+                            &:hover {
+                                color: rgb(0, 0, 0);
                                 background-color: rgb(166, 122, 248);
-                                border: 1px solid  rgb(166, 122, 248);   
-                            }  
+                                border: 1px solid  rgb(166, 122, 248);
+                            }
                         }
                     }
-                }            
-                
+                }
+
             }
-            
+
         }
     }
 }

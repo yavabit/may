@@ -141,6 +141,7 @@
 }
 .catalog .catalog-item .catalog-item-img {
   max-height: 294px;
+  vertical-align: middle;
 }
 .catalog .catalog-item .catalog-item-img a img {
   width: 100%;

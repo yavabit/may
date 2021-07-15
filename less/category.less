@@ -69,12 +69,12 @@
                     color: black;
                     text-decoration: none;
                     padding: 2rem 1rem;
-                    &.current {            
+                    &.current {
                         background-color:  rgb(122, 88, 185);
-                        color: white;                
-                    }  
+                        color: white;
+                    }
                 }
-                 
+
                 &:hover {
                     background-color: rgb(166, 122, 248);
 
@@ -99,7 +99,7 @@
             border: 1px solid rgb(122, 88, 185);
             margin-bottom: 3rem;
             border-radius: 5px;
-            
+
             form {
                 line-height: 100%;
                 padding-left: 1rem;
@@ -108,11 +108,11 @@
                 display: flex;
                 //justify-content: space-between;
                 flex-wrap: wrap;
-                
+
                 label {
                     padding-top: .5rem;
                     padding-bottom: .5rem;
-                    
+
                 }
                 select {
                     padding: 1rem;
@@ -124,7 +124,7 @@
                     margin-right: 3rem;
                     background-color: rgb(166, 122, 248);
                     cursor: pointer;
-                    
+
                 }
                 .flx-but {
                     width: 20%;
@@ -136,15 +136,15 @@
                     width: 100%;
                     border: none;
                     border-top-right-radius: 5px;
-                    border-bottom-right-radius: 5px;       
-                    padding: .5rem 1rem;  
-                    text-transform: uppercase;    
-                    border-left: 2px solid rgb(122, 88, 185);   
-                    background-color: rgb(122, 88, 185);    
+                    border-bottom-right-radius: 5px;
+                    padding: .5rem 1rem;
+                    text-transform: uppercase;
+                    border-left: 2px solid rgb(122, 88, 185);
+                    background-color: rgb(122, 88, 185);
                     color: white;
                     transition: background-color .2s;
                     &:hover {
-                        background-color: rgb(166, 122, 248);                           
+                        background-color: rgb(166, 122, 248);
                     }
                     &:focus {
                         outline: none;
@@ -168,12 +168,14 @@
 
         .catalog-item-img {
             max-height: 294px;
-
+            vertical-align: middle;
             a {
                 img {
+
                     width: 100%;
                     border-top-left-radius: 5px;
                     border-top-right-radius: 5px;
+
                 }
 
                 span {
@@ -299,8 +301,8 @@
             height: 100%;
             padding: 1rem 2rem;
             border: 1px solid rgb(122, 88, 185);
-            border-radius: 4px;                
-            color: rgb(122, 88, 185);       
+            border-radius: 4px;
+            color: rgb(122, 88, 185);
             text-decoration: none;
             transition-duration: 0.5s;
             &:hover {
@@ -309,12 +311,12 @@
                 color:white;
                 border-color: rgb(166, 122, 248);
             }
-            &.current {            
+            &.current {
                 background-color:  rgb(122, 88, 185);
-                color: white;                
-            }                
+                color: white;
+            }
         }
-        
+
 
     }
 }
@@ -323,7 +325,7 @@
     display: none;
 }
 
-.category-menu-button { 
+.category-menu-button {
     display: none;
 }
 
@@ -332,18 +334,18 @@
 @media (max-width: 575px) {
     .catalog {
         .container {
-            display: block;            
+            display: block;
         }
-    
+
         .categories {
-            display: none;    
+            display: none;
         }
-    
-    
+
+
         .catalog-items {
-            display: flex;            
+            display: flex;
             flex-wrap: wrap;
-            
+
             width: 100%;
             .sort {
                 width: 100%;
@@ -358,7 +360,7 @@
                     label {
                         padding-top: .5rem;
                         padding-bottom: .5rem;
-                        display: block;                                                
+                        display: block;
                     }
                     select {
                         padding: 1rem;
@@ -370,7 +372,7 @@
                         margin-right: 3rem;
                         background-color: rgb(166, 122, 248);
                         cursor: pointer;
-                        
+
                     }
                     .flx-wrap1 {
                         width: 100%;
@@ -385,10 +387,10 @@
                         }
                     }
                     .flx-but {
-                        width: 40%;      
+                        width: 40%;
                         display: flex;
-                        align-items: flex-end;  
-                        margin-right: 10%;                                      
+                        align-items: flex-end;
+                        margin-right: 10%;
                     }
                     input[type="submit"] {
                         margin-top: 1rem;
@@ -399,7 +401,7 @@
                 }
             }
         }
-    
+
         .catalog-item {
             width: 45%;
             margin-bottom: 4rem;
@@ -407,64 +409,64 @@
             box-shadow: 0 0 5px 0 black;
             //transition: box-shadow  .5s;
             position: relative;
-    
+
             &:hover {
                 box-shadow: 0 0 10px 0 black;
             }
-    
+
             .catalog-item-img {
                 max-height: 175px;
-    
+
                 a {
                     img {
                         width: 100%;
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
                     }
-    
+
                     span {
                         position: absolute;
                         left: 0;
-    
+
                         img {
                             width: 60px;
                         }
                     }
                 }
             }
-    
+
             .description {
                 font-size: 2rem;
                 padding: 1rem 1rem;
-    
+
                 .title {
                     margin-bottom: .5rem;
-    
+
                     h4 {
                         font-size: 2rem;
-    
+
                         a {
                             text-decoration: none;
                             color: black
                         }
                     }
                 }
-    
+
                 .price {
                     margin-bottom: 1rem;
-    
+
                     p {
                         font-size: 2.2rem;
                         color: rgb(122, 88, 185);
                         font-weight: bold;
                     }
                 }
-    
+
                 .to-cart-buts {
                     font-size: 1.5rem;
                     display: flex;
                     //justify-content: space-between;
-    
+
                     button {
                         display: inline-block;
                         width: 100%;
@@ -472,35 +474,35 @@
                         border: 1px solid rgb(122, 88, 185);
                         border-radius: 1rem;
                         padding: 1rem .5rem;
-    
+
                         &:hover {
                             transition-duration: .3s;
                         }
                     }
-    
+
                     .to-cart {
                         color: white;
                         background-color: rgb(122, 88, 185);
-    
+
                         &:hover {
                             color: rgb(255, 255, 255);
                             background-color: rgb(166, 122, 248);
                             border: 1px solid rgb(166, 122, 248);
                         }
                     }
-    
+
                     .quick-to-cart {
                         display: none;
                     }
                 }
             }
         }
-    
+
         .to-catalog {
             //flex-wrap: wrap;
             width: 100%;
             text-align: center;
-    
+
             a {
                 padding: 1rem 3.5rem;
                 background-color: rgb(122, 88, 185);
@@ -511,7 +513,7 @@
                 color: white;
                 text-transform: uppercase;
                 transition-duration: .3s;
-    
+
                 &:hover {
                     color: rgb(255, 255, 255);
                     background-color: rgb(166, 122, 248);
@@ -539,8 +541,8 @@
                 height: 100%;
                 padding: 1rem 2rem;
                 border: 1px solid rgb(122, 88, 185);
-                border-radius: 4px;                
-                color: rgb(122, 88, 185);       
+                border-radius: 4px;
+                color: rgb(122, 88, 185);
                 text-decoration: none;
                 transition-duration: 0.5s;
                 &:hover {
@@ -549,23 +551,23 @@
                     color:white;
                     border-color: rgb(166, 122, 248);
                 }
-                &.current {            
+                &.current {
                     background-color:  rgb(122, 88, 185);
-                    color: white;                
-                }                
+                    color: white;
+                }
             }
-            
-    
+
+
         }
     }
 
     .mob-categories {
-        
+
         width: 100%;
         border: 1px solid rgb(122, 88, 185);
         text-transform: uppercase;
         animation-name: fade_up;
-        animation-duration: 1s; 
+        animation-duration: 1s;
         display: none;
         position: fixed;
         z-index: 200;
@@ -583,7 +585,7 @@
             margin-left: 20%;
             padding: 2rem 1rem;
             font-size: 2rem;
-            
+
             background-color: transparent;
             color: rgb(122, 88, 185);
         }
@@ -592,7 +594,7 @@
             list-style: none;
             padding-left: 0;
             margin-bottom: 0;
-            
+
             li {
 
                 width: 100%;
@@ -611,15 +613,15 @@
                     text-decoration: none;
                     padding: 2rem 1rem;
                     font-weight: 600;
-                    &.current {            
+                    &.current {
                         background-color:  rgb(122, 88, 185);
-                        color: white;                
-                    }  
+                        color: white;
+                    }
                 }
-                 
+
             }
         }
-        
+
         .close-but {
             position: absolute;
             width: 70px;

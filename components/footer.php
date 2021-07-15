@@ -15,19 +15,19 @@
                     <ul>
                         <li><a href="catalog.php">Каталог</a></li>
                         <li><a href="info.php">Оплата и доставка</a></li>
-                        <li><a href="cart.php">Корзина</a></li>                      
-                        
+                        <li><a href="cart.php">Корзина</a></li>
+
                         <li><a href="Политика конфиденциальности.pdf" target="_blank">Политика конфиденциальности</a></li>
                     </ul>
-                </div>                
+                </div>
                 <div class="footer-menu">
                     <h3>Контакты</h3>
                     <ul>
                         <li><span class="location-all"></span>Россия, Старый Оскол</li>
                         <li><span class="location-on"></span>Космос мкр. 9а, с 9:00 до 21:00</li>
                         <li><a href=""><span class="map"></span>Мы на карте</a></li>
-                        <li><a href="tel: +79999999999" class="telephone"><span class="tel"></span>+7(999)999 99 99</a><a href="tel: +79999999999"><span class="tel"></span>+7(999)999 99 99</a></li>                        
-                        <li><a href="email"><span class="email"></span>Почта</a></li>                        
+                        <li><a href="tel: +79999999999" class="telephone"><span class="tel"></span>+7(999)999 99 99</a><a href="tel: +79999999999"><span class="tel"></span>+7(999)999 99 99</a></li>
+                        <li><a href="email"><span class="email"></span>Почта</a></li>
                     </ul>
                 </div>
                 <div class="footer-menu">
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>Магазин цветов "Май" © 2021. Все права защищены</p>
                 <p class="developing">Разработка сайта: <a href="https://www.instagram.com/yava_web/">yava_web</a></p>
@@ -48,7 +48,7 @@
     </footer>
 
     <button class="up-button" type="button" title="Наверх"></button>
-    
+
     <div class="dark-bg"></div>
     <div class="light-bg"></div>
 
@@ -86,3 +86,4 @@
   <script src="../JS/sort.js"></script>
   <script src="../JS/jquery.cookie.js"></script>
   <script src="../JS/fed_form.js"></script>
+  
